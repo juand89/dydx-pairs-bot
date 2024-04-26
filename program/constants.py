@@ -6,10 +6,13 @@ from decouple import config
 MODE = "DEVELOPMENT"
 
 # Close all open position and orders
-ABORT_ALL_POSITIONS = False
+ABORT_ALL_POSITIONS = True
 
 # find cointegrated pairs
 FIND_COINTEGRATED = True
+
+# MANAGE EXITS
+MANAGE_EXITS = True
 
 # place trades
 PLACE_TRADES = True
@@ -20,10 +23,13 @@ RESOLUTION = "1HOUR"
 # Stats window
 WINDOW = 21
 
+# Leverage
+LEVERAGE = 1
+
 #Tresholds - Opening
 MAX_HALF_LIFE = 24
-ZSCORE_TRESH = 1.5
-USD_PER_TRADE = 50
+ZSCORE_THRESH = 1.5
+USD_PER_TRADE = 100
 USD_MIN_COLLATERAL = 1880
 
 #Tresholds - Closing
